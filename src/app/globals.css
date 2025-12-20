@@ -1,0 +1,38 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+.main {
+  max-width: 900px;
+  background-color: antiquewhite;
+  margin: auto;
+  transform: translateY(60px);
+  padding: 20px;
+  max-height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+button {
+  cursor: pointer;
+  min-width: 50px;
+  background-color: #eee;
+  padding: 8px 15px ;
+  border: 1px solid #171717;
+}
