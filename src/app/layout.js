@@ -12,7 +12,9 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true}>
        <Navbar/>
         <main className="main">
-           {children}
+          <section className="main-sec">
+            {children}
+          </section>
         </main>
       </body>
     </html>
