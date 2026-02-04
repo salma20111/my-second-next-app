@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/Componunst/UiElements/Button";
 import classes from "./page.module.css"
 
 import { useState } from "react";
@@ -32,9 +33,12 @@ export default function BlogPage() {
             <h2>blog page</h2>
             <div>
                 <p>{counter}</p>
-                <button onClick={increaseCounter}>+</button>
-                <button onClick={decreaseCounter}>-</button>
-                <button onClick={resetCounter}>Reset</button>
+
+               <section className={classes['actions']}>
+                 <Button onClick={increaseCounter} disabled={counter >= 10}>+</Button>
+                <Button onClick={decreaseCounter} outline disabled={counter <= 0}>-</Button>
+                <Button onClick={resetCounter} danger disabled={counter === 0}>Reset</Button>
+               </section>
             </div>
 
             <br/>
@@ -42,7 +46,7 @@ export default function BlogPage() {
               <br/>
 
             <div>
-                <button onClick={toggleMenu}>  {showList ? "hide" : "show"}   menu </button>
+                <Button onClick={toggleMenu} danger={showList}>  {showList ? "hide" : "show"}   menu </Button>
                  
                     <ul className={`${classes['list']} ${!showList ? classes['hide-list'] : ''}`}>
                       <li>item 2</li>
