@@ -1,0 +1,83 @@
+.main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/* background-image: url("/images/pexels-maxravier-3331094.jpg");
+ background-size: 1300px 600px;  
+  background-repeat: no-repeat; */
+  /* background-color: #0f1f3d; */
+   background: linear-gradient(235deg, #d3d7df, #00163d);
+    /* Fallback for older browsers */
+    background-color: #1e3c72;
+    height: 100vh;
+}
+
+.card {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px;
+  border-radius: 20px;
+
+  background: rgba(13, 6, 78, 0.596);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+.list {
+  list-style: none;
+  margin-top: 20px;
+  color: var(--white);
+}
+
+.list li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4db5ff;
+  font-size: 22px;
+}
+.text {
+    margin-right: 10px;
+}
+.image img {
+  width: 300px;
+  border-radius: 15px;
+  border: 5px solid white;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  
+}
+
+.text h3 {
+    color: var(--white);
+    position: relative;
+    /* border-bottom: #0f1f3d 2px solid; */
+}
+
+.text h3::before {
+    position: absolute;
+    content: "";
+    width: 85%;
+    background-color: #0f1f3d;
+    left: 0;
+    font-size: 22px;
+     bottom: -10px;
+     height: 3px;
+     opacity: 0.4;
+}
+
+.contact {
+position: absolute;
+bottom: 18;
+color: var(--white);
+font-size: 19;
+left: 101;
+}

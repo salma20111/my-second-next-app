@@ -1,15 +1,15 @@
 import Button from "@/Componunst/UiElements/Button";
-
+import Firstsection from "@/Componunst/Home/FirstSection/FirstSection";
 
 export default function Home() {
   return (
     <div>
         <h2>
-           hello this is home page
+          <Firstsection />
         </h2> 
-        <Button href="/blog" outline>
+        {/* <Button href="/blog" outline>
         Blog
-        </Button>
+        </Button> */}
     </div>
   );
 }
